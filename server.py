@@ -311,4 +311,5 @@ if __name__ == "__main__":
     print("📱 API: http://127.0.0.1:5000/")
     print("=" * 60)
     
-    socketio.run(app, debug=True, host="127.0.0.1", port=5000)
+    # Измени эту строку - добавь allow_unsafe_werkzeug=True
+    socketio.run(app, debug=False, host="0.0.0.0", port=5000, allow_unsafe_werkzeug=True)
